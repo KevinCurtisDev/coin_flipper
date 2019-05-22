@@ -1,0 +1,9 @@
+.Flipper {
+    width: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(46, 46, 250);
+    border-radius: 4px;
+    border: none;
+}
