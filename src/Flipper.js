@@ -7,7 +7,11 @@ class Flipper extends Component {
     }
     constructor(props){
         super(props);
-
+        this.state = {
+            numHeads: 0,
+            numTails: 0,
+            numFlips: 0
+        }
         this.flipCoin = this.flipCoin.bind(this);
     }
     
@@ -17,7 +21,10 @@ class Flipper extends Component {
 
     render() {
         return (
-            <button className="Flipper" onClick={this.flipCoin}>Flip me!</button>
+            <div>
+                <button className="Flipper" onClick={this.flipCoin}>Flip me!</button>
+                <p>Out of {this.state.numFlips} flips, there have been {this.state.numHeads} heads and {this.state.numTails} tails.</p>
+            </div>
         )
     }
 }
